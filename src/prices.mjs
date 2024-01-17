@@ -23,11 +23,6 @@ function createApp(database) {
     res.json({ cost });
   });
 
-  function parseDate(dateString) {
-    if (dateString) {
-      return new Date(dateString.replaceAll("-", "/"));
-    }
-  }
 
   function parsePlainDate(dateString) {
     if (dateString) {
